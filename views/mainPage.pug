@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Подсчитываем количество цифр в строках
+  body
+    form
+        input(
+            type="text"
+            name="userinput"
+        )
+        button(type="submit") отправить
+
+    h3 Результат обработки строк
+    div(id="statContainer")
+        include statContainer.pug
+
+    script
+        include frontScripts/scripts.js
